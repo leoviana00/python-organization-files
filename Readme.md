@@ -50,7 +50,7 @@ $ sudo crontab -e
 - Adicione a segunte linha
 
 ```
-0 * / 1 * * * cd ~/Downloads && python3 automation.py >> ~/Downloads/log/`date +\%d-\%m-\%y`-organization.log 2>&1
+0 */1 * * * cd ~/Downloads && python3 automation.py >> ~/Downloads/log/`date +\%d-\%m-\%y`-organization.log 2>&1
 ```
 
 ## Referências
