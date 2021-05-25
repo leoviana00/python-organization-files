@@ -1,13 +1,9 @@
-# automation.py
-
-
 import os
 from shutil import move
 from datetime import datetime
 
-# Path do diretório raiz
-user = os.getenv('USER')
-root_dir = '/home/{}/Downloads/'.format(user)
+# Variáveis
+root_dir = os.getcwd()
 data_e_hora_atuais = datetime.now()
 data_e_hora_em_texto = data_e_hora_atuais.strftime('%d/%m/%Y %H:%M')
 
@@ -71,8 +67,9 @@ def move_files(files):
             root_dir = make_folder('outros')
             move(file, '{}/{}'.format(root_dir, file))
             print('O arquivo {} foi movido para: {}'.format(file, root_dir))
-            print('# ---------------------------------------------- ')
+            
             
 if __name__ == "__main__":
     files = get_non_hidden_files_except_current_file(root_dir)
     move_files(files)
+print('# ----------------------------------------------------------------------------------------')
