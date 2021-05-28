@@ -1,8 +1,8 @@
 # Python
 
-## Projeto
+## 🌱 Projeto
 
-- Script para organizar por categoria os arquivos do diretório download
+- Script para `organizar por categoria os arquivos` do diretório download
 
 ## Requisitos
 
@@ -10,10 +10,12 @@
 
 ## Diretório raiz
 
-- O diretório raiz é criado de acordo com o Sistema Operacional, no meu caso foi o linux.
+- O `diretório raiz` é criado de acordo com o Sistema Operacional, no meu caso foi o linux.
 
 ## Como funciona
-Colque o script dentro do diretório downloads
+Colque o `script` dentro do diretório `downloads`
+
+![](./imagens/script_in_dir.png)
 
 - Execução - Manual
 
@@ -21,7 +23,7 @@ Colque o script dentro do diretório downloads
 python3 organization.py
 ```
 
-- Execução criando log (Crie um diretório log, dentro do diretório downloads
+- Execução `criando log` (Crie um diretório log, dentro do diretório downloads
 
 ```bash
 python3 organization.py >>~/Downloads/log/log.txt
@@ -33,6 +35,14 @@ python3 organization.py >>~/Downloads/log/log.txt
 $ python3 automation.py >>~/Downloads/log/$(date +%Y_%m_%d)-log.txt
 ```
 
+## Estrutura dos diretórios
+
+- Crie o diretório log dentro de downloads
+
+- Após rodar o `script` os diretórios serão criados e os arquivos serão movidos para suas respectivas pastas.
+
+![](./imagens/dir.png)
+
 ## Utilizando cronjob para agendamento do scrip
 
 - Visualizando os cronjobs do sistema
@@ -41,7 +51,7 @@ $ python3 automation.py >>~/Downloads/log/$(date +%Y_%m_%d)-log.txt
 $ sudo crontab -l
 ```
 
-- Configurando um cronjob para rodar de 1 em 1 hora.
+- Configurando um `cronjob` para rodar de 1 em 1 hora.
 
 ```bash
 $ sudo crontab -e
@@ -52,6 +62,13 @@ $ sudo crontab -e
 ```
 0 */1 * * * cd ~/Downloads && python3 automation.py >> ~/Downloads/log/`date +\%d-\%m-\%y`-organization.log 2>&1
 ```
+
+# Logs
+
+- Os logs seráo armazenados dentro do diretório `log` que você criou.
+
+![](./imagens/log.png)
+
 
 ## Referências
 
