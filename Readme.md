@@ -29,7 +29,7 @@ python3 organization.py
 python3 organization.py >>~/Downloads/log/log.txt
 ```
 
-- Nomeando o log com a data 
+- Nomeando o `log` com a data 
 
 ```bash
 $ python3 automation.py >>~/Downloads/log/$(date +%Y_%m_%d)-log.txt
@@ -45,7 +45,7 @@ $ python3 automation.py >>~/Downloads/log/$(date +%Y_%m_%d)-log.txt
 
 ## Utilizando cronjob para agendamento do scrip
 
-- Visualizando os cronjobs do sistema
+- Visualizando os `cronjobs` do sistema
 
 ```bash
 $ sudo crontab -l
