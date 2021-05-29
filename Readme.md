@@ -37,7 +37,7 @@ $ python3 automation.py >>~/Downloads/log/$(date +%Y_%m_%d)-log.txt
 
 ## Estrutura dos diretórios
 
-- Crie o diretório log dentro de downloads
+- Crie o diretório `log` dentro de `downloads`
 
 - Após rodar o `script` os diretórios serão criados e os arquivos serão movidos para suas respectivas pastas.
 
